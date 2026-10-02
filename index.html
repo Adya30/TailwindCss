@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-black">
-    <header>
-        <div>
+
+<body class="bg-neutral-900 text-white min-h-screen">
+    <!-- NAVBAR / HEADER -->
+    <header class="bg-neutral-800 sticky top-0 z-50">
+        <div class="x-auto flex items-center justify-between px-6">
+
             <a href="">
                 <img src="Assets/logo.png"></img>
             </a>
 
-            <nav class="text-gra">
-                <a href="#" class="color-white">Home</a>
-                <a href="#">Project</a>
-                <a href="#">Experience</a>
-                <a href="#">Contact</a>
+            <nav class="text-neutral-500 m-4">
+                <a href="#" class="hover:text-white">Home</a>
+                <a href="#" class="hover:text-white">Project</a>
+                <a href="#" class="hover:text-white">Experience</a>
+                <a href="#" class="hover:text-white">Contact</a>
             </nav>
-
         </div>
     </header>
+
+    <!-- HERO SECTION -->
+    <section class="mx-auto max-w-3xl text-center">
+        <img src="./Assets/Hero.png" alt="Hero picture" class="w-36 mx-auto">
+        <h1 class="text-3xl font-bold">I do code and
+            <br>make content
+            <br>
+            <span class="bg-gradient-to-r from-red-400 via-violet-600 to-purple-500 bg-clip-text text-transparent">
+                about it!</span>
+        </h1>
+        <p class="pt-8">
+            I am a seasoned full-stack software engineer with over <br>
+            8 years of professional experience, specializing in backend development. <br>
+            My expertise lies in crafting robust and scalable Saas-based <br>
+            architectures on the Amazon AWS platform. <br>
+        </p>
+        <div class="pt-10">
+            <!-- Button Get In Touch -->
+            <a href="" class="bg-white px-4 py-2 rounded-full text-neutral-900 font-semibold">Get In Touch</a>
+            <!-- Button Download CV -->
+            <a href="" class="border border-white px-4 py-2 rounded-full font-semibold">Download CV</a>
+        </div>
+    </section>
 </body>
+
 </html>
